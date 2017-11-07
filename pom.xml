@@ -26,22 +26,38 @@
         <mapper.version>3.3.6</mapper.version>
         <pagehelper.version>5.0.0</pagehelper.version>
         <mysql.version>5.1.29</mysql.version>
-        <spring.version>4.1.2.RELEASE</spring.version>
+        <spring.version>3.2.18.RELEASE</spring.version>
         <mybatis.spring.version>1.2.4</mybatis.spring.version>
     </properties>
 
     <dependencies>
+        <!--test-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
+        <!--slf4j-->
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
         </dependency>
+
+        <!--logback-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+
 
         <!--web-->
         <dependency>

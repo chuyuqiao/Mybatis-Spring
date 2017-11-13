@@ -1,18 +1,14 @@
 package com.chuyuqiao.ssm.logback;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
-/**
- * Created by 17021629 on 2017/11/7.
- */
+@Slf4j
 public class LogbackTest {
-    private static final Logger LOGGER = LoggerFactory.getLogger(LogbackTest.class);
     public static void main(String[] args) {
-        LOGGER.trace("======trace");
-        LOGGER.debug("======debug");
-        LOGGER.info("======info");
-        LOGGER.warn("======warn");
-        LOGGER.error("======error");
+        log.trace("======trace");
+        log.debug("======debug");
+        log.info("======info");
+        log.warn("======warn");
+        log.error("======error");
     }
 }
